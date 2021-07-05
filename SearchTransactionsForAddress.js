@@ -6,7 +6,7 @@ require('events').defaultMaxListeners = 70; // Not sure if this is needed
 // mainnet
 const web3 = new Web3('https://bsc-dataseed1.binance.org:443');
 
-// The rate limit of BSC endpoint on Testnet and Mainnet is 10K/5min.
+// The rate limit of BSC endpoint on Testnet and Mainnet is 10K/5min (https://docs.binance.org/smart-chain/developer/rpc.html)
 // Iterate over (current block - 500000) to (current block)
 let index = 0
 web3.eth.getBlockNumber().then(blockNumber => {
