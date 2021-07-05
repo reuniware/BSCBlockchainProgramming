@@ -16,7 +16,7 @@ web3.eth.getBlockNumber().then(blockNumber => {
     for (let i = blockNumber - 500000; i <= blockNumber; i++) { // 500000 <=> Back to approximatively 17 days
         setTimeout(function(index) {
             getBlockInfo(i).then()
-        }, 2500 * index, index) // Change 2500 to a suitable value (the server sends a 403 forbidden error if you make too many requests in a unknown(?) interval)
+        }, 4000 * index, index) // If needed, change 4000 to a suitable value (the server sends a 403 forbidden error if you make too many requests in a unknown(?) interval)
         index = index+1
     }
 }).catch(err => {
