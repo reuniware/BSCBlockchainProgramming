@@ -1,3 +1,6 @@
+// THIS IS A HIGHLY EXPERIMENTAL NODEJS CODE SO YOU MIGHT HAVE TO IMPROVE THIS CODE A LOT !!
+// investdatasystems@yahoo.com
+
 const Web3 = require('web3');
 const ethers = require('ethers');
 
