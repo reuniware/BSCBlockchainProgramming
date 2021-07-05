@@ -13,7 +13,7 @@ const web3 = new Web3('https://bsc-dataseed1.binance.org:443');
 // Iterate over (current block - 500000) to (current block)
 let index = 0
 web3.eth.getBlockNumber().then(blockNumber => {
-    for (let i = blockNumber - 500000; i <= blockNumber; i++) { // 500000 <=> Back do approximatively 17 days
+    for (let i = blockNumber - 500000; i <= blockNumber; i++) { // 500000 <=> Back to approximatively 17 days
         setTimeout(function(index) {
             getBlockInfo(i).then()
         }, 2500 * index, index) // Change 2500 to a suitable value (the server sends a 403 forbidden error if you make too many requests in a unknown(?) interval)
