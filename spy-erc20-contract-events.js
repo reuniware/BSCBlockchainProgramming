@@ -1,5 +1,6 @@
-// This script scan for events associated to a contract address on the Binance Smart Chain (BEP20 smart contracts)
+// This script scan for realtime events associated to a contract address on the Binance Smart Chain (BEP20 smart contracts)
 // Can easily be adapted to work on the Ethereum network (ERC20 smart contracts)
+// Feel free to contact me at email : InvestDataSystems@Yahoo.Com
 
 const Web3 = require('web3');
 const ethers = require('ethers');
