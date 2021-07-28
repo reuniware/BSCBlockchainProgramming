@@ -1,7 +1,7 @@
 // BEP20 Smart contracts scanner around PancakeSwap (Detection of PairCreated events).
 // Plus a basic algorithm for detection of potential scam smart contracts and scammers' addresses.
 // Results are logged to .txt files.
-// Set the detect* variables to true or false according to what information you need (mint/transfer/approve/swap).
+// Set the detect* variables to true or false according to what information you need (PairCreated/mint/transfer/approve/swap).
 // For swap scans, you might want to filter on the minBNB variable (if minBNB=5 then only swaps of amounts greater or equal to 5 BNB will be logged).
 
 const Web3 = require('web3');
