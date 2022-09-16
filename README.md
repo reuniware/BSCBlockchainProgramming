@@ -5,3 +5,6 @@ npm install web3
 
 npm install ethers
 
+node PancakeSwapAdvancedScanner.js
+
+
